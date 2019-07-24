@@ -1,11 +1,11 @@
 // IDE:VS2017
 // OpenCV 4.1.0
 
-#include <opencv2/opencv.hpp>  // åŒ…å«opencvå¤´æ–‡ä»¶
+#include <opencv2/opencv.hpp>  // °üº¬opencvÍ·ÎÄ¼ş
 #include <iostream>
 
-using namespace cv;  // åŒ…å«cvå‘½åç©ºé—´
-using namespace std; 
+using namespace cv;  // °üº¬cvÃüÃû¿Õ¼ä
+using namespace std;
 
 int main(int argc, char** argv)
 {
@@ -18,11 +18,11 @@ int main(int argc, char** argv)
         return -1;
     }
 
-    namedWindow("Input", WINDOW_AUTOSIZE);  // åˆ›å»ºå›¾åƒæ˜¾ç¤ºçª—å£
-    imshow("Input", srcImage);  // æ˜¾ç¤ºå›¾åƒ
+    namedWindow("001-Demo", WINDOW_AUTOSIZE);  // ´´½¨Í¼ÏñÏÔÊ¾´°¿Ú
+    imshow("001-Demo", srcImage);  // ÏÔÊ¾Í¼Ïñ
 
-    waitKey(0);  // ç­‰å¾…ä»»æ„é”®æŒ‰ä¸‹
-    destroyAllWindows();  // å…³é—­æ‰€æœ‰çš„çª—å£
-    
+    waitKey(0);  // µÈ´ıÈÎÒâ¼ü°´ÏÂ
+    destroyAllWindows();  // ¹Ø±ÕËùÓĞµÄ´°¿Ú
+
     return 0;
 }
