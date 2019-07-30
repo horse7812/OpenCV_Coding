@@ -45,6 +45,8 @@ int main(int argc, char** argv)
         return -1; 
     }
 
+
+    // 赋值  克隆  拷贝
     Mat t4 = srcImg;  // 采用赋值的方式创建图像，t4和srcImg指向同一个DataBlock  // 如果此时修改t4，也就是修改了srcImg，那么t5和t6也会改变
     Mat t5 = srcImg.clone();  // 采用克隆的方式创建图像，t5和srcImg指向不同的DataBlock
     Mat t6;
@@ -59,6 +61,7 @@ int main(int argc, char** argv)
     namedWindow("004-Demo-6", WINDOW_AUTOSIZE);
     imshow("004-Demo-6", t6);
 
+    // creat 5
     Mat t7 = Mat::zeros(srcImg.size(), srcImg.type());
     // Mat t7 = Mat::ones(srcImg.size(), srcImg.type());
 
