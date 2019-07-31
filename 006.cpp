@@ -57,7 +57,6 @@ int main(int argc, char** argv)
     //【2】指针方式遍历图像，然后对每个像素取反【思路2】
 
     /*
-        
         首先获取图像数据每一行的首地址，
         然后再以每一行的首地址作为该行数据（即数组）的首地址来访问该行数据。
     */
@@ -92,7 +91,6 @@ int main(int argc, char** argv)
 
     namedWindow("006-Demo-3", WINDOW_AUTOSIZE);
     imshow("006-Demo-3", dstImg2);
-
     
     waitKey(0);
     destroyAllWindows();
